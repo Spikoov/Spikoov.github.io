@@ -13,17 +13,17 @@
         <img id="drum" src="https://spikoov.github.io/drumVRproject/img/drum.jpg">
         <img id="cymbal" src="https://spikoov.github.io/drumVRproject/img/cymbal.jpg">
         <!--Audio-->
-        <audio id="snare" src="https://spikoov.github.io/drumVRproject/sound/snare.wav"></audio>
+        
       </a-assets>
       <!-- Lumière -->
       <a-entity position="0 3 0" light="type: point; color: #ddf"></a-entity>
       <!-- Les cylindres -->
       <a-cylinder src="#drum" position="-1.20 0.50 -1" radius="0.5" rotation="20 90 0" height="0.2"
-                  sound="src: url(#snare); on: click; poolSize:3"
+                  sound="src: url(sound/snare.mp3); on: click; poolSize:3"
                   event-set__enter="_event: mousedown; color: #ff5959" 
                   event-set__leave="_event: mouseup; color: #fff"></a-cylinder>
       <a-cylinder src="#drum" position="-0.4 1.1 -1.75" rotation="0 90 30" radius="0.4" height="0.2" 
-                  sound="src: url(sound/cylindre2.mp3); on: click; poolSize:3"
+                  sound="src: url(sound/tom-a.wav); on: click; poolSize:3"
                   event-set__enter="_event: mousedown; color: #ff5959" 
                   event-set__leave="_event: mouseup; color: #fff"></a-cylinder>
       <a-cylinder src="#drum" position="0.5 1.1 -1.75" rotation="0 90 30" radius="0.4" height="0.2" 
